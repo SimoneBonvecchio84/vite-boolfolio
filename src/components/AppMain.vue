@@ -17,15 +17,22 @@ export default {
 
 <template>
     <div class="container">
-        <h1>Lista Progetti</h1>
-        <div class="row">
-            <div class="col" v-for="curProject in projects ">
-                <div class="card">
-                    <h4>Titolo</h4>
-                    {{ curProject.title }}
-                    <h5>Tipologia</h5>
-                    {{ curProject.type_id }}
+        <h1 class="py-3">Lista Progetti</h1>
+        <div class="row gap-3">
+            <div class="col-3" v-for="curProject in projects ">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{ curProject.title }}
+                        </h5>
+                        <h5 class="card-title">
+                            {{ curProject.type_id }}
+                        </h5>
+                      
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
