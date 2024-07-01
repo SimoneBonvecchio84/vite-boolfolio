@@ -18,9 +18,9 @@ export default {
 <template>
     <div class="container">
         <h1 class="py-3">Lista Progetti</h1>
-        <div class="row gap-3">
-            <div class="col-3" v-for="curProject in projects ">
-                <div class="card" style="width: 18rem;">
+        <div class="row gap-2">
+            <div class="col" v-for="curProject in projects ">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">
@@ -29,6 +29,14 @@ export default {
                         <h5 class="card-title">
                             {{ curProject.type_id }}
                         </h5>
+
+                        <p>
+                            {{ curProject.content }}
+                        </p>
+
+                        <h6>Data:
+                            {{ curProject.created_at }}
+                        </h6>
                       
                     </div>
                 </div>
