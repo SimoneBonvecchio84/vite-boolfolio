@@ -5,7 +5,7 @@ export default {
             activeIndex: false,
             menu: [
                 {
-                    title: "home",
+                    title: "Progetti",
                     routeName: "home",
                 },
                 {
